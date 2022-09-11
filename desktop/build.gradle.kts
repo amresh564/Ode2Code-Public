@@ -24,11 +24,7 @@ kotlin {
             dependencies {
                 implementation(project(":common"))
                 implementation(compose.desktop.currentOs)
-            }
-        }
-        val jvmTest by getting {
-            dependencies {
-                implementation(kotlin("test"))
+
             }
         }
     }
@@ -39,8 +35,16 @@ compose.desktop {
         mainClass = "MainKt"
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "jvm"
+            packageName = "MiQuickBill"
             packageVersion = "1.0.0"
+
+            val iconsRoot = project.file("../common/src/desktopMain/resources/images")
+
+            windows {
+                //iconFile.set(iconsRoot.resolve("icon-windows.ico"))
+                menuGroup = "MiBillingApp"
+            }
         }
+
     }
 }
