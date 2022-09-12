@@ -39,13 +39,15 @@ fun LoginPage() {
 
         Spacer(modifier = Modifier.height(20.dp))
         TextField(
-            label = { Text(text = "Mi Identification Number") },
+            singleLine = true,
+            label = { Text(text = "Mi Username") },
             value = username.value,
             onValueChange = { username.value = it })
 
         Spacer(modifier = Modifier.height(20.dp))
         TextField(
-            label = { Text(text = "Password For Mi Account") },
+            singleLine = true,
+            label = { Text(text = "Password") },
             value = password.value,
             visualTransformation = PasswordVisualTransformation(),
             keyboardOptions = KeyboardOptions(keyboardType = KeyboardType.Password),
@@ -77,28 +79,10 @@ fun LoginPage() {
 
 }
 
-@Composable
-fun NavigationBar() {
-    Box(
-        modifier = Modifier.fillMaxWidth().fillMaxHeight(),
-        contentAlignment = Alignment.BottomCenter
-    ) {
-
-    }
-
-}
-
-@Composable
-fun ImageAndText(name: String, imageUrl: String) {
-    Row {
-
-    }
-}
-
 @Preview
 @Composable
 fun AppPreview() {
     MaterialTheme {
-        ImageAndText("Image Text", "https:www.google.com")
+        LoginPage()
     }
 }
