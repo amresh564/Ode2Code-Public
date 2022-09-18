@@ -1,6 +1,6 @@
 # Mi QuickBill
-##Build Instructions :-
-###1. For Android
+## Build Instructions :-
+### 1. For Android
 Hassel free install by unzipping the apk release in github.
 
 Or 
@@ -10,7 +10,7 @@ Or
 3) Build the Android File
 4) Use android virtual device or your personal device to get the application running.
 
-###2. For Windows
+### 2. For Windows
 Hassel free install by unzipping the apk release provided in the github.
 
 Or 
