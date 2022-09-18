@@ -12,7 +12,7 @@ import com.ode.code.common.screen.*
 @Composable
 fun AppUi() {
     Surface(
-        modifier = Modifier.fillMaxSize(),
+        modifier = Modifier.fillMaxSize()
     ) {
         when (AppState.screenState()) {
             ScreenType.LoginScreen -> {
@@ -33,6 +33,14 @@ fun AppUi() {
 
             ScreenType.OrderDetailScreen -> {
                 OrderDetailScreen()
+            }
+
+            ScreenType.PaymentPage -> {
+                PaymentPage()
+            }
+
+            ScreenType.PaymentSuccessScreen -> {
+                PaymentSuccessPage()
             }
         }
     }

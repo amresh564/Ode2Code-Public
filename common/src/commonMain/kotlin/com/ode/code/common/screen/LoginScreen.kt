@@ -1,6 +1,6 @@
 package com.ode.code.common.screen
 
-import androidx.compose.desktop.ui.tooling.preview.Preview
+
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.foundation.text.ClickableText
@@ -80,7 +80,7 @@ fun LoginScreen() {
 
 }
 
-@Preview
+
 @Composable
 fun AppPreview() {
     MaterialTheme {
