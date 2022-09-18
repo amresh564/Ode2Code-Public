@@ -1,8 +1,9 @@
 import androidx.compose.material.MaterialTheme
+import androidx.compose.material.lightColors
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 import androidx.compose.ui.window.rememberWindowState
-import com.ode.code.common.screen.LoginPage
+import com.ode.code.common.view.AppUi
 
 fun main() = application {
     Window(
@@ -10,8 +11,8 @@ fun main() = application {
         title = "MiQuickBill",
         state = rememberWindowState(isMinimized = false),
     ) {
-        MaterialTheme {
-            LoginPage()
+        MaterialTheme(colors = lightColors()) {
+            AppUi()
         }
     }
 }

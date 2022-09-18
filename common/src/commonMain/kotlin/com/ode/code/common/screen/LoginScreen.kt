@@ -22,16 +22,17 @@ import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.ode.code.common.model.AppState
+import com.ode.code.common.model.ScreenType
 
 
 @Composable
-fun LoginPage() {
+fun LoginScreen() {
     Column(
         modifier = Modifier.padding(20.dp),
         verticalArrangement = Arrangement.Center,
-        horizontalAlignment = Alignment.CenterHorizontally
+        horizontalAlignment = Alignment.CenterHorizontally,
     ) {
-
         val username = remember { mutableStateOf(TextFieldValue()) }
         val password = remember { mutableStateOf(TextFieldValue()) }
 
@@ -56,7 +57,7 @@ fun LoginPage() {
         Spacer(modifier = Modifier.height(20.dp))
         Box(modifier = Modifier.padding(40.dp, 0.dp, 40.dp, 0.dp)) {
             Button(
-                onClick = { },
+                onClick = { AppState.screenState(ScreenType.CategoryScreen) },
                 shape = RoundedCornerShape(50.dp),
                 modifier = Modifier
                     .fillMaxWidth()
@@ -83,6 +84,6 @@ fun LoginPage() {
 @Composable
 fun AppPreview() {
     MaterialTheme {
-        LoginPage()
+        LoginScreen()
     }
 }
