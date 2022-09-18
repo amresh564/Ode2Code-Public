@@ -4,7 +4,7 @@ import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.mutableStateOf
 
 enum class ScreenType {
-    LoginScreen, CategoryScreen, ProductScreen, ProductDetailsScreen, OrderScreen, OrderDetailScreen, PaymentSuccessScreen, PaymentFailedScreen
+    LoginScreen, CategoryScreen, ProductScreen, ProductDetailsScreen, OrderScreen, OrderDetailScreen, PaymentSuccessScreen, PaymentFailedScreen, PaymentPage
 }
 
 object AppState {

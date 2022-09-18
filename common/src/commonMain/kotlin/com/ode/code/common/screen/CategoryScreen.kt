@@ -1,6 +1,5 @@
 package com.ode.code.common.screen
 
-import androidx.compose.desktop.ui.tooling.preview.Preview
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.ExperimentalFoundationApi
 import androidx.compose.foundation.clickable
@@ -91,7 +90,6 @@ fun renderCategories(categories: MutableList<Category>, categorySelectedState: (
 }
 
 @OptIn(ExperimentalMaterialApi::class, ExperimentalFoundationApi::class)
-@Preview
 @Composable
 fun previewCategories() {
     val categorySelectedState = mutableStateOf(false)

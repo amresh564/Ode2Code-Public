@@ -6,7 +6,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color.Companion.Gray
+import androidx.compose.ui.graphics.Color.Companion.White
 import com.ode.code.common.model.AppState
 import com.ode.code.common.model.ScreenType
 import com.ode.code.common.screen.*
@@ -15,7 +15,7 @@ import com.ode.code.common.screen.*
 fun AppUi() {
     Surface(
         modifier = Modifier.fillMaxSize(),
-        color = Gray
+        color = White
     ) {
         when (AppState.screenState()) {
             ScreenType.LoginScreen -> {
@@ -36,6 +36,14 @@ fun AppUi() {
 
             ScreenType.OrderDetailScreen -> {
                 OrderDetailScreen()
+            }
+
+            ScreenType.PaymentPage -> {
+                PaymentPage()
+            }
+
+            ScreenType.PaymentSuccessScreen -> {
+                PaymentSuccessPage()
             }
         }
     }
