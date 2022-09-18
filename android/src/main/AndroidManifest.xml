@@ -3,6 +3,7 @@
     package="com.ode.code.android">
 
     <application
+        android:name=".MainApplication"
         android:label="@string/app_name"
         android:allowBackup="false"
         android:supportsRtl="true"

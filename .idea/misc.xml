@@ -3,6 +3,14 @@
   <component name="CodeInsightWorkspaceSettings">
     <option name="optimizeImportsOnTheFly" value="true" />
   </component>
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Development/Ode2Code-Demo/android/src/main/res/drawable/my_great_logo.xml" value="0.215" />
+        <entry key="..\:/Development/Ode2Code-Demo/android/src/main/res/layout/activity_firebase_ui.xml" value="0.20742753623188406" />
+      </map>
+    </option>
+  </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$" />

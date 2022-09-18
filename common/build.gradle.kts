@@ -27,20 +27,10 @@ kotlin {
                 api(compose.material)
             }
         }
-        val commonTest by getting {
-            dependencies {
-                implementation(kotlin("test"))
-            }
-        }
         val androidMain by getting {
             dependencies {
                 api("androidx.appcompat:appcompat:1.4.1")
                 api("androidx.core:core-ktx:1.7.0")
-            }
-        }
-        val androidTest by getting {
-            dependencies {
-                implementation("junit:junit:4.13.2")
             }
         }
         val desktopMain by getting {
@@ -48,7 +38,6 @@ kotlin {
                 api(compose.preview)
             }
         }
-        val desktopTest by getting
     }
 }
 
@@ -65,5 +54,5 @@ android {
     }
 }
 dependencies {
-
+    implementation("androidx.navigation:navigation-compose:2.4.1")
 }
